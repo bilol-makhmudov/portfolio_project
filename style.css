@@ -68,7 +68,7 @@ nav img{
 
 .container{
   position: absolute;
-  top: 32%;
+  top: 40%;
   left: 10%;
   transform: translate(-50,-50%);
 }
@@ -92,7 +92,7 @@ nav img{
 }
 
 .content h2:nth-child(2) {
-  color: violet;
+  color: rgb(238, 130, 238);
   animation: animate 4s ease-in-out infinite;
 }
 
@@ -125,37 +125,22 @@ nav img{
   color: violet;
 }
 
-.text {
-  flex: 1;
-}
-
-.photo {
+.photoBig {
   flex: 1;
   display: flex;
   justify-content: flex-end;
 }
-.photo img {
+.photoBig img {
   margin-top: 10%;
-  margin-right: 20%;
+  margin-right: 10%;
   border-radius: 50%;
-  width: 55%;
-  height: 50%;
+  width: 450px;
+  height: 450px;
   overflow: hidden;
 }
 
 .laptop-img{
   text-align: right;
-}
-.avatar {
-  width: 20%;
-  height: 20%;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.avatar img {
-  width: 100%;
-  height: auto;
 }
 
 .follow{
@@ -174,8 +159,49 @@ nav img{
   display: inline-block;
   margin: 1%;
 }
+.photoSmall{
+  display: none;
+}
+.skills{
+  column-count: auto;
+}
+.skills img{
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+}
+.skills img:hover{
+  transform: scale(1.3);
+  transition: 1s;
+}
 
+.pdf{
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+.pdf img{
+  margin: 5px;
+  width: 60%;
+  height: 100%;
+}
 
+.download{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.download button{
+  color: white;
+  background-color: white;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;background-color: violet;
+}
 
 @keyframes animate {
   0%,
@@ -213,8 +239,53 @@ nav img{
   display: none;
 }
 
+@media(max-width: 500px){
+  .download{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* .container{
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  transform: translate(-50,-50%);
+} */
+  
+  .pdf img{
+    width: 90%;
+  }
+  .text{
+    font-size: 20px;
+  }
+  .content{
+    font-size: 2em;
+  }
+  .skills{
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+  .skills img{
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+}
+
+
+}
 
 @media(max-width: 1012px) {
+  .container{
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  transform: translate(-50%,-50%);
+}
+  .pdf img{
+    width: 80%;
+  };
   .text{
     font-size: 25px;
   }
@@ -233,9 +304,9 @@ nav img{
   .nav-links{
     position: absolute;
     background: #003044;
-    height: 50%;
+    height: max-content;
     width: 100%;
-    top: 0%;
+    top: -100%;
     right: 0%;
     text-align: left;
     z-index: 2;
@@ -262,7 +333,9 @@ nav img{
     font-size: 30px;
   }
   .introduction p{
+    text-align: left;
     font-size: 20px;
+  
   }
   .follow h1{
    font-size: 30px;
@@ -271,13 +344,17 @@ nav img{
     font-size: 30px;
     margin: 2%;
   }
-  .photo img {
-  margin-top: 160%;
-  text-align: bottom;
-  align-items: bottom;
-  border-radius: 70%;
-  width: 70%;
-  height: 30%;
+  .photoBig img {
+  display: none;
+}
+.photoSmall {
+  margin: 5%;
+  align-items: center;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  width:250px;
+  height: 250px;
   overflow: hidden;
 }
 
