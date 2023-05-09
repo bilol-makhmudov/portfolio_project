@@ -78,7 +78,6 @@ nav img{
 .content {
   position:relative;
 }
-
 .content h2 {
   margin-top: 10%;
   color: #fff;
@@ -258,11 +257,18 @@ nav img{
     width: 90%;
   }
   .text{
+    margin: 2%;
     font-size: 20px;
   }
   .content{
-    font-size: 2em;
+    width: 250px;
   }
+  .content h2 {
+  margin-top: 2%;
+  color: #fff;
+  font-size: 0.5em;
+  position: absolute;
+}
   .skills{
     margin-top: 20px;
     margin-right: 10px;
