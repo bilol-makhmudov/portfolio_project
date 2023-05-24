@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <title>Biloliddin | Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"> <img src="images/bm-logo.png" width="10%" height="10%"> </a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    
+                    <ul>
+                            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                            <li><a href=""><i class="fas fa-project-diagram"></i> Projects</a></li>
+                            <li><a href="resume.html"><i class="fas fa-file-pdf"></i> Resume</a></li>
+                    </ul>
+                </div>
+                 <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="pdf">
+            <img src="images/cvforweb.jpg">
+            </div>
+            <div class="download">
+            <a href="images/cvforweb.jpg" download="CV_BiloliddinMakhmudov.jpg">
+                <button>Download</button>
+            </a> 
+</div>
+                </section>
+<!--Find me on-->
+        <section class="follow">
+            <h1>Contact with me via</h1>
+            <i class="fab fa-github" onClick="gitHub()" id="githubIcon"></i>
+            <i class="fab fa-linkedin" onClick="linkedIn()" id="linkedinIcon"></i>
+            <i class="fas fa-envelope" onclick="window.location.href = 'mailto:acutmaxb@gmail.com';"></i>
+            <h3>Developed by Biloliddin Makhmudov</h3>
+        </section> 
+<!--Javascript part-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    var github = document.getElementById("githubIcon");
+    var linkedin = document.getElementById("linkedinIcon");
+
+    function showMenu(){
+        navLinks.style.top="0%";
+    }
+
+    function hideMenu(){
+
+        navLinks.style.top="-100%";
+    }
+    function gitHub(){
+        github.addEventListener('click', () => {
+    window.open('https://github.com/bilol-makhmudov', '_blank');
+  });
+    }
+    function linkedIn(){
+        linkedinIcon.addEventListener('click', () => {
+    window.open('https://www.linkedin.com/in/bilol-makhmudov/', '_blank');
+  });
+    }
+</script>
+    </body>
+</html>
